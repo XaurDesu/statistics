@@ -156,17 +156,119 @@
 %----------------------------------------------------------------------------------------
 %	First set of related questions
 %----------------------------------------------------------------------------------------
-
-\chapter{Introduction}
-
-The field of statistics and probability is generally one where the 
-
 %--------------------------------------------------------------
 %	More sections?
 %----------------------------------------------------------------------------
 
 \chapterimage{Heading2.jpg}
 \chapter{Fundamentals.}
+
+\section{Experiments and Events}
+
+On the field of probability, we'll define an experiment as the process that generates a set
+of data. But also more broadly, it is a process that generates any data that we might find
+an observation or result with. We denote an experiment with the letter $ \zeta $, examples
+of experiments include:
+
+\begin{itemize}
+    \item $\zeta$ 1: The number of rolls of a dice before landing on the number 6
+    \item $\zeta$ 2: The number of calls from Bogota to New York being registered on the next hour, starting instantly.
+    \item $\zeta$ 3: The result of a hipotecary credit (approved or disapproved)
+    \item $\zeta$ 4: The time between now and the next earthquake measured with 5.0 or more on Richter's scale somewhere in south america.
+\end{itemize}
+
+As we can see, a random experiment can cover a very broad category of measurements when we really think about it, however,
+they all show three particular characteristics, they must be present at all times for a random experiment to be able to 
+have itself called as random:
+
+\begin{itemize}
+    \item \textbf{Randomness: }We must not know the result of the experiment before it concludes
+    \item \textbf{Unique results: }Every experiment must produce an unique result per instance.
+    \item \textbf{Determinable results: }The result of an experiment must be able to be noticed and determined or otherwise categorized.
+\end{itemize}
+
+\subsection{Sample space}
+
+A sample space, denoted as $ \Omega  $ or 'S' in most literature, is a set of possible results in a random experiment 
+$ \zeta $. Such an experiment $ \zeta $ can have multiple sample spaces $ \Omega $. Such a space can be both finite and infinite,
+in case of it being infinite, we must be able to distinguish wether or not it is numerable, in case it is we will
+call such a space 'discrete' otherwise, we call it 'continuous'.
+
+For an example on how this could be seen, let's take into consideration the following example:
+
+$ \zeta $: The number of times a dice is rolled with a number greater than 3 that is odd
+
+We can find two distinct sample spaces in this example, namedly:
+$$
+\begin{cases}
+    \Omega_1 \text{:} \{ 1,2,3,4,5,6 \} \\
+    \Omega_2 \text{:} \{ \text{even, odd} \}    
+\end{cases}
+$$
+
+both of these spaces are described by ennumerating, however, we can also describe sample spaces via rules and mathematical notation,
+for example, we could describe our first sample space in the former example as:
+
+$$ \Omega_1: \{ x | 1 \le x \le 6 \} $$
+
+A sample space is not nescessarily tied to a data variable, and a data variable might be implied more than once on a dataset,
+take this thought experiment, for example:
+
+\textit{Ex. 1}
+
+\paragraph*{In a probability and statistics class of 56 students, one student is selected as a representative to the Student Council and one as an alternate.
+student is selected as a representative for the Student Council and another as an alternate. Thus, the result of the experiment can be
+of the experiment can be represented by the following tuple:}
+\begin{center}
+    (president, alternate)    
+\end{center}
+
+What's the size of the sample space here presented?
+
+\paragraph{Solution:}
+
+Even though the number of students is just 56, this doesn't mean the sample size is also
+56, this is because we have a combination where we use the same dataset twice on two 
+different random experiments, noted as:
+$$
+\begin{cases}
+    \zeta_1 \text{: The election of a president.}\\
+    \zeta_2 \text{: The election of an alternate.}
+\end{cases}
+$$
+
+Both of them will have similar, but ultimately different sizes and the final result will be a combination
+between the two. we could think of it as the total number of students, multiplied by the total number of
+students minus one (since we have to select a president and the president themselves cannot be the alternate), 
+therefore:
+
+\begin{gather}
+    len(S) = 56 * (56-1) \\
+    len(S) = 56 * 55 \\
+    len(S) = 3080
+\end{gather}
+
+the total number of possible results is 3080
+
+
+\section{Definitions.}
+\begin{enumerate}
+    \item \textbf{Union}
+    
+    \item \textbf{Intersection}
+
+    Between a set $ A $ and a set $ B $, we can
+
+    \item \textbf{Compliment}
+    
+    Noted as $ A^c $ or $ A' $ on a set '$ A $', a compliment is in essence the inverse 
+    of said set.
+
+    
+\end{enumerate}
+
+\chapterimage{Heading2.jpg}
+\chapter{Counting Methods.}
 
 % Simply upload additional images Heading5.jpg, Heading6.jpg etc. into the pictures folder
 
