@@ -173,7 +173,7 @@ of experiments include:
 \begin{itemize}
     \item $\zeta$ 1: The number of rolls of a dice before landing on the number 6
     \item $\zeta$ 2: The number of calls from Bogota to New York being registered on the next hour, starting instantly.
-    \item $\zeta$ 3: The result of a hipotecary credit (approved or disapproved)
+    \item $\zeta$ 3: The result of a hipotecary credit (approved or rejected)
     \item $\zeta$ 4: The time between now and the next earthquake measured with 5.0 or more on Richter's scale somewhere in south america.
 \end{itemize}
 
@@ -216,7 +216,11 @@ take this thought experiment, for example:
 
 \textit{Ex. 1}
 
-\paragraph*{In a probability and statistics class of 56 students, one student is selected as a representative to the Student Council and another as an alternate. Thus, the result of the experiment can be represented by the following tuple:}
+\paragraph*{In a probability and statistics class of 56 students, one 
+student is selected as a representative to the Student Council and 
+another as an alternate. Thus, the result of the experiment can be 
+represented by the following tuple:}
+
 \begin{center}
     (president, alternate)    
 \end{center}
@@ -253,16 +257,29 @@ the total number of possible results is 3080
 \begin{enumerate}
     \item \textbf{Union}
     
+    Between a set $ A $ and a set $ B $, we can say an Union is the collection of items that can be found in
+    either set. it's marked as $ A \bigcup  B $
+
+
     \item \textbf{Intersection}
 
-    Between a set $ A $ and a set $ B $, we can
+    Between a set $ A $ and a set $ B $, we can say an intersection is the collection of items that can be found in
+    both sets. it's marked as $ A \bigcap  B $
 
     \item \textbf{Compliment}
     
     Noted as $ A^c $ or $ A' $ on a set '$ A $', a compliment is in essence the inverse 
-    of said set.
-
+    of said set. Every item not in $ A $ will be part of its compliment.
     
+    \item \textbf{Event}
+    
+    An event is defined as the result of a random experiment. Once the experiment $ \zeta $
+    is finished we denote the result as a subset 'B' of the sample space defined for $ \zeta $
+
+    \item \textbf{Impossible Event}
+    
+    An event with no chance of ocurring with the parameters given. Such an event should be
+    noted as $P() = \varnothing = 0 $
 \end{enumerate}
 
 \chapterimage{Heading2.jpg}
